@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background: #e3f9ff;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.calculator{
+    background:#3a4452;
+    padding: 20px;
+    border-radius: 10px;
+}
+.calculator h1{
+    text-align: center;
+    font-size: 40px;
+    color:  #e3f9ff;
+}
+
+.calculator form .flex{
+    justify-content: right;
+    margin: 20px 0;
+    width: 100%;
+    padding:5px 0px; 
+    border: 2px solid gray;
+    border-radius: 10px; 
+      
+    
+}
+.calculator form .flex input{
+    text-align: right;
+    font-size: 45px;
+    box-shadow: none;
+    width: 310px;  
+}
+.calculator form .flex .history-display{
+    background-color:#3a4452;
+    margin-left: 10px;
+    width: 310px;
+    text-align: right;
+    color: white;
+    word-wrap: break-word;
+    padding:20px 0px;
+    font-size: 25px;
+    opacity:0.6;
+}
+.calculator form input{
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(255,255,255,0.1),5px 5px 15px rgba(0,0,0,0.2);
+    cursor: pointer;
+    background: transparent;
+    font-size: 20px;
+    color:#fff;
+    margin:10px;
+}
+.calculator form input:hover{
+    opacity: 0.6;
+}
+form input.operator{
+    color:#33ffd8;
+}
+.calculator form .equal-to{
+    width: 145px;
+    background-color: #000080;
+    opacity: 0.8;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Calculator-MDG Space</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">  
+        <div class="calculator">
+            <h1>My Calculator</h1>
+                <form>
+                    <div class="flex">     
+                    <input type="text" id="display" placeholder="0">
+                    <div class="history-display"></div>   
+                    </div>        
+                    <div>
+                        <input type="button" value="AC" onclick="deleteLine();
+                        clearDisplay();
+                        " class="operator">
+                        <input type="button" value="DEL" onclick="deleteChar()" class="operator">
+                        <input type="button" value="." onclick="appendChar('.')" class="operator">
+                        <input type="button" value="/" onclick="appendChar('/')" class="operator">
+                    </div>
+                    <div>
+                        <input type="button" value="7" onclick="appendChar('7')">
+                        <input type="button" value="8" onclick="appendChar('8')">
+                        <input type="button" value="9" onclick="appendChar('9')">
+                        <input type="button" value="*" onclick="appendChar('*')" class="operator">
+                    </div>
+                    <div>
+                        <input type="button" value="4" onclick="appendChar('4')">
+                        <input type="button" value="5" onclick="appendChar('5')">
+                        <input type="button" value="6" onclick="appendChar('6')">
+                        <input type="button" value="-" onclick="appendChar('-')" class="operator">
+                    </div>
+
+                    <div>
+                        <input type="button" value="1" onclick="appendChar('1')">
+                        <input type="button" value="2" onclick="appendChar('2')">
+                        <input type="button" value="3" onclick="appendChar('3')">
+                        <input type="button" value="+" onclick="appendChar('+')" class="operator">
+                    </div>
+                    <div>
+                        <input type="button" value="Clear" onclick="deleteHistory();">
+                        <input type="button" value="0" onclick="appendChar('0')">
+                        <!-- Equal button to evaluate the expression -->
+                        <input class="equal-to" type="button" value="=" onclick="appendChar('=');
+                        calculate();">
+                    </div>
+                    
+                </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
