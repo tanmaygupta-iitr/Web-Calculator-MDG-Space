@@ -32,7 +32,7 @@ function calculate() {
         for(let i=0;i<data.length;i++){
             if(data[i]=="/"){
                 let result = eval(display.value);
-                display.value = Number(result).toFixed(1);
+                display.value = Number(result).toFixed(2);
                 break;
             }
         }
